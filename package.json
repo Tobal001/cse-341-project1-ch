@@ -1,0 +1,22 @@
+{
+  "name": "cse-341-project1-ch",
+  "version": "1.0.0",
+  "description": "My first CSE341 project",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Tobal001/cse-341-project1-ch.git"
+  },
+  "author": "Cristobal Henriquez",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Tobal001/cse-341-project1-ch/issues"
+  },
+  "homepage": "https://github.com/Tobal001/cse-341-project1-ch#readme",
+  "dependencies": {
+    "express": "^4.21.2"
+  }
+}
