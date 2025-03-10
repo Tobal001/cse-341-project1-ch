@@ -10,7 +10,7 @@ const getAll = async (req, res) => {
 };
 
 const getSingle = async (req, res) => {
-    const userId = ObjectId.createFromTime(req.params.id);
+    const userId = new ObjectId(req.params.id);
     const result = await mongodb.getDatabase().db('Project01').collection('Contacts').find({_id: userId});
     result.toArray().then((contacts) => {
         res.setHeader('Content-Type', 'application/json');
