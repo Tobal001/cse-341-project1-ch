@@ -1,8 +1,12 @@
 // Import the custom MongoDB database module to access the database connection
+// Import the custom MongoDB database module to access the database connection
 const mongodb = require('../data/database');
+// Import the ObjectId constructor from the MongoDB driver to handle document IDs
 // Import the ObjectId constructor from the MongoDB driver to handle document IDs
 const ObjectId = require('mongodb').ObjectId;
 
+//Asynchronously retrieves all contacts from the 'Contacts' collection
+//in the 'Project01' database.
 //Asynchronously retrieves all contacts from the 'Contacts' collection
 //in the 'Project01' database.
 const getAll = async (req, res) => {
@@ -13,11 +17,14 @@ const getAll = async (req, res) => {
         .find();
     result.toArray().then((contacts) => {
             // Set the response header to indicate that the content is in JSON format.
+            // Set the response header to indicate that the content is in JSON format.
         res.setHeader('Content-Type', 'application/json');
         res.status(200).json(contacts);
     });
 };
 
+//Asynchronously retrieves a single contact by its unique ID from the 'Contacts' collection
+//in the 'Project01' database.
 //Asynchronously retrieves a single contact by its unique ID from the 'Contacts' collection
 //in the 'Project01' database.
 const getSingle = async (req, res) => {
