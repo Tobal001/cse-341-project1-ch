@@ -5,11 +5,10 @@
     "description": "Contact Api",
     "version": "1.0.0"
   },
-  "host": "localhost:3000",
+  "host": "https://project1-kxsf.onrender.com",
   "basePath": "/",
   "schemes": [
-    "https",
-    "http"
+    "https"
   ],
   "paths": {
     "/": {
